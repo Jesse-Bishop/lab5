@@ -10,7 +10,22 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+
+	$("a.thumbnail").click(projectClick);
+
+	function projectClick(e){
+		e.preventDefault();
+		var nameTitle = $(this).find("h3").text();
+		console.log(nameTitle);
+
+
+
+	}
+
 }
+
+
+
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
